@@ -47,7 +47,7 @@ export class PluginPage extends React.Component { // eslint-disable-line react/p
     return (
       <div>
         <Helmet
-          title={`Strapi - ${pluginName}`}
+          title={`Clik - ${pluginName}`}
         />
         {containers}
       </div>

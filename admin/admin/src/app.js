@@ -1,15 +1,8 @@
-/**
- * app.js
- *
- * This is the entry file for the application, only setup and boilerplate
- * code.
- */
 
 /* eslint-disable */
 import './public-path';
 import 'babel-polyfill';
-/* eslint-disable no-console */
-// Import all the third party stuff
+
 import { Provider } from 'react-redux';
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -43,9 +36,7 @@ const plugins = (() => {
     return [];
   }
 })();
-/* eslint-enable */
 
-// Create redux store with history
 const basename = strapi.remoteURL.replace(window.location.origin, '');
 const history = createHistory({
   basename,
